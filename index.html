@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inc & Dec using venilla js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <p id="counter">Counter value : <b id="count">0</b></p>
+        <button id="inc">Increment</button>
+        <button id="dec">Decrement</button><br><br>
+        <button id="rst">Reset</button>
+    </div>
+    <footer></footer>
+
+    <script>
+        let count = 0;
+
+        document.getElementById("inc").onclick = function(){
+        count++;
+        document.getElementById("count").innerHTML = count;
+        }
+        document.getElementById("dec").onclick = function(){
+        count--;
+        document.getElementById("count").innerHTML = count;
+        }
+        document.getElementById("rst").onclick = function(){
+        count = 0;
+        document.getElementById("count").innerHTML = count;
+        }
+
+</script>
+</body>
+</html>
